@@ -3,6 +3,10 @@ apiVersion: tekton.dev/v1
 kind: Task
 metadata:
   name: mock-git-clone
+  annotations:
+    task-annotation: task-annotation-value
+  labels:
+    task-label: task-label-value
 spec:
   description: >-
     This is a dummy task that emulates a task that performs a git clone. Its sole purpose is to

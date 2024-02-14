@@ -3,6 +3,10 @@ apiVersion: tekton.dev/v1
 kind: Pipeline
 metadata:
   name: simple-build
+  annotations:
+    pipeline-annotation: pipeline-annotation-value
+  labels:
+    pipeline-label: pipeline-label-value
 spec:
   params:
     # mock-git-clone parameters
